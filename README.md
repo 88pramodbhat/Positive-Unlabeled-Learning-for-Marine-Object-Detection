@@ -150,9 +150,4 @@ Open http://localhost:7860 in your web browser.
 
 Run the unit test suite with `pytest`:
 
-```
-
----
-
-## 📄 License
-This project is released under the [MIT License](LICENSE).
+``
