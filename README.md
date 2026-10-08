@@ -7,8 +7,6 @@
 
 A modular, production-ready PyTorch implementation of **Positive-Unlabeled (PU) Semi-Supervised Learning for Underwater Marine Object Detection**.
 
-Based on the research paper **"Positive-Unlabeled Learning for Marine Object Detection"**, this framework addresses the challenge of incomplete annotations in underwater datasets (such as **FathomNet**), where visible marine organisms are often unannotated and falsely assumed to be background noise.
-
 ---
 
 ## 🌟 Key Features
