@@ -1,0 +1,34 @@
+num_classes: 32
+class_names:
+  - pyrosome
+  - larvacean
+  - urchin
+  - crab
+  - soft coral
+  - barnacle
+  - sea pen
+  - sea slug
+  - octopus
+  - jellyfish
+  - sea star
+  - sea cucumber
+  - brittle star
+  - sponge
+  - anemone
+  - bony fish
+  - shark
+  - ray
+  - shrimp
+  - amphipod
+  - isopod
+  - bivalve
+  - gastropod
+  - hydroid
+  - coral
+  - tunicates
+  - bryozoan
+  - ctenophore
+  - polychaete
+  - benthic worm
+  - sea snail
+  - sea squirt

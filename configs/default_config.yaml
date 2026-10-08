@@ -1,0 +1,35 @@
+project:
+  name: "positive-unlabeled-marine-detection"
+  seed: 42
+  device: "cuda" # or "cpu"
+
+dataset:
+  name: "fathomnet"
+  data_dir: "data/fathomnet"
+  labeled_images: "data/fathomnet/train_labeled"
+  unlabeled_images: "data/fathomnet/train_unlabeled"
+  test_images: "data/fathomnet/test"
+  labeled_anno: "data/fathomnet/annotations/train_labeled.json"
+  test_anno: "data/fathomnet/annotations/test.json"
+  class_config: "configs/fathomnet_32classes.yaml"
+  img_size: [640, 640]
+  num_workers: 4
+
+model:
+  backbone: "resnet50" # resnet50, resnet34, fpn
+  pretrained: true
+  num_classes: 32
+  conf_threshold: 0.25
+  iou_threshold: 0.45
+
+training:
+  batch_size: 8
+  learning_rate: 0.001
+  weight_decay: 0.0005
+  epochs: 25
+  checkpoint_dir: "checkpoints"
+  log_dir: "logs"
+
+pu_learning:
+  prior_pi: 0.35 # Positive class prior in PU risk estimator
+  nnpu_gamma: 1.0 # Non-negative PU risk penalty weight

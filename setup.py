@@ -1,0 +1,37 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="pu_marine_detection",
+    version="1.0.0",
+    description="Positive-Unlabeled Learning Framework for Marine Object Detection",
+    author="Marine Vision AI Research",
+    packages=find_packages(),
+    python_requires=">=3.8",
+    install_requires=[
+        "torch>=2.0.0",
+        "torchvision>=0.15.0",
+        "numpy>=1.23.0",
+        "opencv-python>=4.7.0",
+        "albumentations>=1.3.0",
+        "pycocotools>=2.0.6",
+        "matplotlib>=3.6.0",
+        "seaborn>=0.12.0",
+        "pandas>=1.5.0",
+        "pyyaml>=6.0",
+        "tqdm>=4.64.0",
+        "scikit-learn>=1.2.0",
+        "gradio>=3.50.0",
+        "pillow>=9.4.0",
+    ],
+    classifiers=[
+        "Development Status :: 4 - Beta",
+        "Intended Audience :: Science/Research",
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Topic :: Scientific/Engineering :: Artificial Intelligence",
+        "Topic :: Scientific/Engineering :: Image Recognition",
+    ],
+)

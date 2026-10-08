@@ -1,0 +1,18 @@
+stage: "stage2_teacher_student_pu"
+
+teacher_student:
+  teacher_weights: "checkpoints/stage1_best.pt"
+  pseudo_label_conf_thresh: 0.70
+  ema_decay: 0.999
+  pseudo_anno_save: "data/fathomnet/annotations/pseudo_labels.json"
+
+pu_learning:
+  prior_pi: 0.35
+  nnpu_gamma: 1.0
+
+training:
+  epochs: 20
+  batch_size: 8
+  learning_rate: 0.0005
+  weight_decay: 0.0005
+  checkpoint_save: "checkpoints/stage2_best.pt"
