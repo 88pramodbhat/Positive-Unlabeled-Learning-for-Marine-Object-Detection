@@ -140,13 +140,6 @@ python scripts/predict_image.py --image data/fathomnet/test/marine_0001.jpg --ou
 ### 8. Launch Interactive Web App (Gradio)
 Launch the interactive web user interface:
 ```bash
-python app.py
-```
-Open http://localhost:7860 in your web browser.
-
----
-
-## 🧪 Running Unit Tests
 
 Run the unit test suite with `pytest`:
 
