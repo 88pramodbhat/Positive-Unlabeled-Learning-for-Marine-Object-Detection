@@ -149,32 +149,7 @@ Open http://localhost:7860 in your web browser.
 ## 🧪 Running Unit Tests
 
 Run the unit test suite with `pytest`:
-```bash
-pytest tests/ -v
-```
 
----
-
-## 🐳 Running with Docker
-
-Build and run the application container using Docker:
-```bash
-docker build -t marine-pu-detection .
-docker run -p 7860:7860 marine-pu-detection
-```
-
----
-
-## 📜 Citation
-
-If you find this work or codebase useful in your research, please cite:
-```bibtex
-@article{angadi2026positive,
-  title={Positive-Unlabeled Learning for Marine Object Detection},
-  author={Angadi, Praveen and collaborators},
-  journal={Marine Vision AI & Computer Vision},
-  year={2026}
-}
 ```
 
 ---
